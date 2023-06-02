@@ -1,0 +1,39 @@
+<mat-toolbar class="container-header bg-background">
+  <img src="./assets/images/PAP_Logo.png" alt="Logo" />
+  <span class="example-spacer"></span>
+  <button mat-button>Home</button>
+  <button mat-button [matMenuTriggerFor]="plants" class="button-header">
+    Plants
+    <mat-icon fontIcon="expand_more" class="sub-button-header"></mat-icon>
+  </button>
+  <mat-menu #plants="matMenu">
+    <button mat-menu-item>Plants 1</button>
+    <button mat-menu-item>Plants 2</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="planters" class="button-header">
+    Planters
+    <mat-icon fontIcon="expand_more" class="sub-button-header"></mat-icon>
+  </button>
+  <mat-menu #planters="matMenu">
+    <button mat-menu-item>Planters 1</button>
+    <button mat-menu-item>Planters 2</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="essentials" class="button-header">
+    Essentials
+    <mat-icon fontIcon="expand_more" class="sub-button-header"></mat-icon>
+  </button>
+  <mat-menu #essentials="matMenu">
+    <button mat-menu-item>Essentials 1</button>
+    <button mat-menu-item>Essentials 2</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="services" class="button-header">
+    Services
+    <mat-icon fontIcon="expand_more" class="sub-button-header"></mat-icon>
+  </button>
+  <mat-menu #services="matMenu">
+    <button mat-menu-item>Services 1</button>
+    <button mat-menu-item>Services 2</button>
+  </mat-menu>
+  <span class="example-spacer"></span>
+  <button mat-button>LogOut</button>
+</mat-toolbar>

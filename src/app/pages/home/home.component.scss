@@ -1,0 +1,13 @@
+.container-home {
+  width: 100%;
+  min-height: 100vh;
+
+  .container-header {
+    width: 100%;
+    position: fixed;
+  }
+
+  .container-main {
+    height: 100%;
+  }
+}

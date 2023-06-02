@@ -1,0 +1,16 @@
+.container-header {
+  padding: 0 40px !important;
+
+  .button-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .sub-button-header {
+    order: 1;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

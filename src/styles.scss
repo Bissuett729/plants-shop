@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Ancho y color del scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f0f5f0;
+  border-radius: 0.5rem;
+}
+
+/* Estilo del thumb (barra del scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: #cbdbcb;
+  border-radius: 0.5rem;
+}
+
+/* Estilo del thumb cuando se está interactuando con él */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  border-radius: 0.5rem;
+}
